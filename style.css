@@ -1,6 +1,7 @@
 body{
     width: 100%;
     margin: 0px;
+    background-color: #F4F4F4;
 }
 #navbar{
     border: 1px solid green;
