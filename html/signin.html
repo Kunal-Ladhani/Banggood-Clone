@@ -33,7 +33,7 @@
 
         <form>
           <input id="email" type="text" placeholder="Email" />
-          <input id="password" placeholder="Password" />
+          <input id="password" type="password" placeholder="Password" />
           <input id="new" type="submit" value="Create Your Account" />
         </form>
 
@@ -104,8 +104,9 @@
       signupData.email == data.email &&
       signupData.password == data.password
     ) {
-      alert("login Successful");
       localStorage.setItem("signin", JSON.stringify(signupData));
+      alert("login Successful");
+      window.location.href = "../html/homepage.html";
     } else {
       alert("User data does not exist please check before you Enter ");
     }
