@@ -170,7 +170,8 @@ mensData = [
        
    product.forEach(function(el){
        var box = document.createElement("div")
-
+       box.style.border = "1px solid black";
+       
        var womenImg = document.createElement("img")
        womenImg.setAttribute("src",el.img)
 
@@ -200,6 +201,7 @@ mensData = [
 
    mensData.forEach(function(el){
        var box1 = document.createElement("div")
+       box1.style.border = "1px solid black";
 
        var womenImg1 = document.createElement("img")
        womenImg1.setAttribute("src",el.image_url)

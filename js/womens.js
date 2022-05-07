@@ -48,6 +48,7 @@
        
    product.forEach(function(el){
        var box = document.createElement("div")
+       box.style.border = "1px solid black";
 
        var womenImg = document.createElement("img")
        womenImg.setAttribute("src",el.img)
@@ -108,8 +109,9 @@
    
    product1.forEach(function(el){
        var box1 = document.createElement("div")
-
-       var womenImg1 = document.createElement("img")
+        box1.style.border = "1px solid black";
+       
+        var womenImg1 = document.createElement("img")
        womenImg1.setAttribute("src",el.img)
 
        var price1 = document.createElement("p")
@@ -222,7 +224,7 @@
 
 product2.forEach(function(el){
    var box2 = document.createElement("div")
-
+   box2.style.border = "1px solid black";
    var womenImg2 = document.createElement("img")
    womenImg2.setAttribute("src",el.img)
 
