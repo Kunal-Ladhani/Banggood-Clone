@@ -1,125 +1,120 @@
-mensData = [
+
+var electronicsData = [
     {
-        id:"1535905",
-        name : "Men 100% Cotton Ethnic Pattern Patchwork Dual Pockets Vintage Shirts - Navy M",
-        image_url : "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/52/D1/7b85b464-02ea-4b66-a73e-7c55ac1fea77.jpg.webp",
-        category:"Men's Clothing", 
-        price:"$14.99",
-        strickedoffprice:"$20",
+        img_url : "https://imgaz2.staticbg.com/thumb/gallery/oaupload/banggood/images/32/83/fe953408-9e6f-4b95-88e3-8a47f3f4bf8c.jpg.webp",
+        name : "Xiaomi Redmi Smart Band Pro 1.47' AMOLED 100% NTSC 450 Nit Screen 110+ Fitness Modes Heart Rate Tracking SpO2 Measurement 5ATM Waterproof BT5.0 Smart Watch Global Version",
+        price : "$3895.93",
+        strickedoffprice : "$7792",
+        id :"1927029",
+        category : "electronics"
     },
     {
-        id:"1705238",
-        name : "Cotton Galaxy Print Round Neck Casual Short Sleeve T-Shirts - Black XL",
-        image_url : "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/CA/5F/50e614f6-8f77-4709-b5cf-c2109b7f8477.jpeg.webp",
-        category:"Men's Clothing",
-        price:"$9.99",
-        strickedoffprice:"$29.99",
+        img_url : "https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/53/B8/c08af8c8-07d6-47da-95e0-a4fa42720e87.jpg.webp",
+        name : "GUUDGO 10LED 5X Zoom HD 2MP IP Security Camera WiFi Wireless 1080P Outdoor PTZ Waterproof Night Vision ONVIF - EU Plug",
+        price : "$2805.85",
+        strickedoffprice : "$3973.86",
+        id :"1527199",
+        category : "electronics"
     },
     {
-        id:"1703941",
-        name : "Mens Print Cotton Casual Round Neck Short Sleeve T-Shirts - Pink 3XL",
-        image_url : "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/25/44/baaf1127-5f1c-4ac8-9cf6-0e28d77824ef.jpeg.webp",
-        category:"Men's Clothing",
-        price:"$10.99",
-        strickedoffprice:"$27.99",
+        img_url : "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B4/7C/8b5d1473-7564-43ff-a629-565fa3df6366.jpg.webp",
+        name : "LOKMAT APPLLP 6 1.6 inch 400*400px 4G+64G 4G-LTE Watch Phone GPS+Beidou Android 9.0 Support Google Play with 5MP Rotatable Camera SpO2 Monitor 830mAh Smart Watch - Black 2G+16G",
+        price : "$10130.66",
+        strickedoffprice : "$23613.26",
+        id :"1930618",
+        category : "electronics"
     },
     {
-        id:"1713619",
-        name : "Mens Thin Corduroy Mustard Set Patch Pocket Breathable Short Sleeve Shirt & Shorts - Blue S",
-        image_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/72/CB/281dee5d-1e85-4028-abbf-d44f885bba2a.jpeg.webp",
-        category:"Men's Clothing", 
-        price:"",
-        strickedoffprice:"",
+        img_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/BF/6E/e61b7766-277b-4693-88c8-41be80b8ac35.png.webp",
+        name : "Xiaomi Redmi Watch 2 Lite 1.5 inch HD Screen Multi-system Standalone GPS 100 Fitness Modes 24-Hour Heart Rate Tracking SpO2 Monitor 5ATM Waterproof Smart Watch Global Version",
+        price : "$62233.95",
+        strickedoffprice : "$10130.66",
+        id :"1927034",
+        category : "electronics"
+    }, 
+    {
+        img_url : "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/5E/65/eaefeee8-7384-4689-9e48-f8007ffa5daf.jpg.webp",
+        name : "H96 Max V11 RK3318 DDR3 4GB RAM 64GB ROM Android 11 bluetooth 4.0 USB3.0 5G Wifi 4K UHD HDR TV Box H.265 VP9 Video Decoder OTT Box - EU Plug",
+        price : "$3166.59",
+        strickedoffprice : "$5376.68",
+        id :"1846508",
+        category : "electronics"
     },
     {
-        id:"1840684",
-        name : "Mens Cartoon Colorful Mushroom Print Lapel Short Sleeve Shirt - Black S",
-        image_url : "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/F4/13/c7b26f99-c6fa-4090-b25a-70184f1b2749.jpg.webp",
-        category:"Men's Clothing",
-        price:"$19.99",
-        strickedoffprice:"$28.56",
+        img_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/45/19/5a79557b-11cb-4bfd-b26f-9c895f9cc5ad.jpg.webp",
+        name : "F9 HD 1080P Waterproof Sports Action Camera Camcorder Video DV Car Video Recorder for Mountain Bike Bicycle Motorcycle Helmet",
+        price : "$2337.24",
+        strickedoffprice : "$3083.07",
+        id : "1881849",
+        category : "electronics"
+    }, 
+    {
+        img_url : "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/C5/38/f55d038e-e4de-42fe-8d02-29f27206324a.jpg.webp",
+        name : "Bakeey Bone Conduction bluetooth Music Box Wireless Portable Speaker Stereo Bass Under Pillow Improve Sleep Headphone - Blue",
+        price : "$2025.51",
+        strickedoffprice : "$3895.93",
+        id : "1916543",
+        category : "electronics"
     },
     {
-        id:"1750124",
-        name : "Mens Cotton Stand Collar Multi Pocket Zipper Long Sleeve Simple Jacket - Khaki S",
-        image_url : "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/22/B5/fe91e034-6831-4be5-90fc-c402372e47eb.jpg.webp",
-        category:"Men's Clothing",
-        price:"$53.99",
-        strickedoffprice:"$77.15",
-    },
+        img_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/CD/EB/907d41c2-6195-4d37-b5fc-a1c2a7654415.jpg.webp",
+        name : "XY-S100L bluetooth 5.0 Subwoofer Amplifier Board 50WX2+100W 2.1 Channel Power Audio Stereo Amplifier Board Bass AMP",
+        price : "$1479.97",
+        strickedoffprice : "$1976.86",
+        id : "1856753",
+        category : "electronics"
+    }, 
     {
-        id:"1917163",
-        name : "Men Corduroy Patchwork Contrast Color Block Lapel Casual Shirts - Green S",
-        image_url : "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/23/D2/2e87dad7-85dc-4602-81dc-cd3caa902e70.jpg.webp",
-        category:"Men's Clothing",
-        price:"$30.99",
-        strickedoffprice:"$44.27",
-    },
+        img_url : "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B5/BB/26e3f029-f7d7-4ae3-bf0b-d6f4563ae3b1.jpg.webp",
+        name : "B126 bluetooth 5.0 Speaker Alarm Clock Night Light Multiple Play Modes LED Display 360° Surround Stereo Sound 1800mAh Battery Life - White",
+        price : "$1557.90",
+        strickedoffprice : "$2337.24",
+        id :"1816211",
+        category : "electronics"
+    }, 
     {
-        id:"1699705",
-        name : "Men Cotton Solid Color Little Tag Drawstring Casual Shorts With Pocket - White M",
-        image_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/0B/94/7074eb1f-56c7-49da-a698-24efe382027c.jpg.webp",
-        category:"Men's Clothing",
-        price:"$22.99",
-        strickedoffprice:"$32.86",
-    },
+        img_url : "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/DD/90/b0d3bb9a-95a8-49bd-b769-5781583b8c68.jpg.webp",
+        name : "Geekcreit® 2in1 22mm AC50-500V 0-100A Amp Voltmeter Ammeter Voltage Current Meter With CT Au23 - Blue",
+        price : "$388.89",
+        strickedoffprice : "$513.59",
+        id : "1488131",
+        category : "electronics"
+    }, 
     {
-        id:"1789165",
-        name : "Mens Corduroy Solid Color Casual Pants With Pocket - Black L",
-        image_url : "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/D4/E7/a0d0ba69-43af-4284-9d70-e7135cd6f8bd.jpg.webp",
-        category:"Men's Clothing",
-        price:"$46.99",
-        strickedoffprice:"$67.13",
-    },
+        img_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/AE/9E/e8a54874-247b-4e52-8e21-431d6e80b37e.jpg.webp",
+        name : "ZK-MT21 bluetooth 5.0 Subwoofer Amplifier Board 50WX2+100W 2.1 Channel Power Audio Stereo Amplifier Tone Board Bass AMP AUX",
+        price : "$1324.10" ,
+        strickedoffprice : "$2493.11",
+        id :"1905145",
+        category : "electronics"
+    }, 
     {
-        id:"1825252",
-        name : "Mens Casual Flower Print Short Sleeve Shirts - White M",
-        image_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/E9/36/65c582aa-8e68-48d5-9bfc-95b35715a80a.jpeg.webp",
-        category:"Men's Clothing",
-        price:"$27.12",
-        strickedoffprice:"$39.22",
-    },
+        img_url : "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/BD/CF/c1587418-354b-449f-978d-3bfb4d776cb9.jpg.webp",
+        name : "BlitzWolf® BW-BTS6 bluetooth 5.0 Earphone True Bone Conduction Headphone Vibrator Flexible Magnetic Charging IPX7 Waterproof Sport Earhooks Headphone with Mic",
+        price : "$2493.11",
+        strickedoffprice : "$5454.61",
+        id : "1875481",
+        category : "electronics"
+    }, 
     {
-        id:"1527110",
-        name : "Pine Leaves Print Cotton Short Sleeve Relaxed Shirts - S Green",
-        image_url : "https://imgaz.staticbg.com/thumb/large/oaupload/ser1/banggood/images/F8/CD/ab0bdfea-eeaf-44d8-b595-85fbe91f74f8.JPG.webp",
-        category:"Men's Clothing",
-        price:"$19.99",
-        strickedoffprice:"$29.99",
-    },
+        img_url : "https://imgaz1.staticbg.com/thumb/large/2014/xiemeijuan/09/SKU260663/SKU260663-1.jpg.webp",
+        name : "Geekcreit® 40pcs FR-4 2.54mm Double Side Prototype PCB Printed Circuit Board",
+        price : "$646.07",
+        strickedoffprice : "$1246.17",
+        id : "1765774",
+        category : "electronics"
+    }
+] 
+
+var img_object = [
     {
-        id:"1525703",
-        name : "Men's Knit Cap Hat Padded Warm Beret Caps Casual Outdoor Visor Forward Hat - Black",
-        image_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/8F/7D/65646787-cf59-4915-bd9a-9b8f430b618b.jpg.webp",
-        category:"Men's Clothing",
-        price:"$15.22",
-        strickedoffprice:"$45.99",
-    },
-    {
-        id:"1610723",
-        name : "Collrown Men Vintage Painter Beret Caps Octagonal Newsboy Cap Cabbie Ivy Flat Hat - Coffee L",
-        image_url : "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/C4/C2/b722515f-4baa-4afa-88ad-6bad0b8099d9.jpg.webp",
-        category:"Men's Clothing",
-        price:"$11.99",
-        strickedoffprice:"$38.99",
-    },
-    {
-        id:"1725948",
-        name : "Mens Corduroy Solid Color Drawstring Mid Waist Elastic Cuff Jogger Pants - Blue S",
-        image_url : "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/55/2F/1db5b84f-c0a4-41a9-b908-03a89df1d1c5.jpg.webp",
-        category:"Men's Clothing",
-        price:"$28.99",
-        strickedoffprice:"$48.99",
-    },
-    {
-        id:"1279723",
-        name : "Charmkpr Mens Loose Long Sleeve Cotton Linen Tops Breathable Antibacterial Vintage T-Shirts - S White",
-        image_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/ser1/banggood/images/1C/DF/b90dc209-d0bd-4a21-8db4-daba359c331f.jpg.webp",
-        category:"Men's Clothing",
-        price:"$25.99",
-        strickedoffprice:"$39.13",
+        category : "electronics",
+        id : "1927029",
+        video : "https://youtu.be/1MJVbfbLrqs",
+        img1 : "https://imgaz.staticbg.com/images/oaupload/banggood/images/8C/1E/442a95a5-af6d-4c9b-9909-b03224962d53.jpg.webp",
     }
 ];
+
     // Falsh Deals
     const img0 = document.createElement("img"); 
     img0.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjng01qJnBfD4JAvKIYyeMleuOKxhpuhO3w&usqp=CAU";
@@ -200,7 +195,7 @@ mensData = [
     document.querySelector("#cat1").append(heading1);
     
 
-   mensData.forEach(function(el){
+    electronicsData.forEach(function(el){
         var box1 = document.createElement("div")
         box1.style.border = "1px solid black";
         box1.addEventListener("click", function () {
@@ -208,7 +203,7 @@ mensData = [
           });
 
        var menImg1 = document.createElement("img");
-       menImg1.setAttribute("src",el.image_url);
+       menImg1.setAttribute("src",el.img_url);
 
        var price1 = document.createElement("p");
        price1.innerText=el.price;
