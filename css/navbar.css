@@ -8,7 +8,7 @@ body{
     background-color: #393F41;
 }
 #navbarContent {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width : 90%;
     margin:auto;
     padding: 0px;
@@ -17,14 +17,14 @@ body{
     align-items: flex-start;
 }
 #logo{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 #searchBar{
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 60%;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ body{
 
 #buttons{
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 340px;
     height: 40px;
     justify-content: space-between;

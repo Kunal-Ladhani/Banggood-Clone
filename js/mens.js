@@ -120,7 +120,6 @@ mensData = [
         strickedoffprice:"$39.13",
     }
 ];
-
     // Falsh Deals
     const img0 = document.createElement("img"); 
     img0.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThjng01qJnBfD4JAvKIYyeMleuOKxhpuhO3w&usqp=CAU";
