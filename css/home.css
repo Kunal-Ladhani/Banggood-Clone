@@ -37,11 +37,7 @@ p~p{
     font-size: 14px;
     margin-left: 10px;
     color: whitesmoke;
-    /* height: 10px; */
     padding: 2px;
-    
-  
-    
 }
 
 p{
@@ -49,7 +45,6 @@ p{
     margin: 0px;
     margin-left: 0px;
     margin-top: 5px;
-   
 }
 img+p{
     font-weight: bolder;

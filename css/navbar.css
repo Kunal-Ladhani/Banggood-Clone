@@ -9,7 +9,7 @@ body{
 }
 #navbarContent {
     border: 1px solid red;
-    width : 70%;
+    width : 90%;
     margin:auto;
     padding: 0px;
     display: flex;
@@ -107,9 +107,9 @@ body{
     width: 30px;
 }
 #categories{
-    border: 1px solid red;
-    width: 200px;
-    margin-left: 200px;
+    width: 250px;
+    height: 580px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 ul{
     list-style: none;
@@ -126,4 +126,33 @@ a{
 #info>#icon{
     height: 30px;
     width: 30px;
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#center{
+
+    height: 580px;
+    width: auto;
+}
+
+#infoGraphic{
+    height: 580px;
+    width: 250px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#infoGraphic>p:first-child{
+    margin-top: 300px;
+}
+#info-seeMore {
+    text-align: right;
+}
+
+#info-seeMore > p:hover {
+    color: orange;
 }

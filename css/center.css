@@ -1,18 +1,12 @@
- body{
-    margin: 0%;
-    padding: 0%;
-    justify-content: center;
-    align-items: center;   
-}
 .slider{
     margin: auto;
-    margin-top: 130px;
     width: 900px;
-    height: 500px;
+    height: auto;
     border-radius: 6px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .slider:hover{
     cursor: pointer;
@@ -31,11 +25,11 @@
 }
 /* css for manual slide navigation */
 .navigation-manual{
-position: absolute;
-width: 900px;
-margin-top: -170px;
-display: flex;
-justify-content: center;
+    position: absolute;
+    width: 900px;
+    margin-top: -170px;
+    display: flex;
+    justify-content: center;
 }
 .manual-btn{
     border: 2px solid rgb(205, 203, 200);
@@ -71,13 +65,13 @@ justify-content: center;
     justify-content: center;
     margin-top: 460px;
 }
-.navigation-auto div{
-    border-radius: 2px solid rgb(238, 164, 26);
+.navigation-auto>div{
+    border-radius: 6px solid rgb(238, 164, 26);
     padding: 5px;
     border-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
     transition: 1s;
+    margin-top: -130px;
+    position: absolute;
 }
 .navigation-auto div:not(:last-child){
     margin-right: 40px;
@@ -95,14 +89,14 @@ justify-content: center;
     background: rgb(238, 164, 26);
 }
 .im {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 4px;
     height: 180px;
     width: 900px;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    margin-top: -130px;
+    margin-top: -100px;
     background-color: rgb(226, 156, 26);
 }
 .im>div{
@@ -123,7 +117,7 @@ justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular','Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.im1>p+p+p{
+.im1>p{
     margin-left: 30px;
     font-size: 20px;
     font-weight: 700;
@@ -138,12 +132,12 @@ justify-content: center;
     border-radius: 4px;
     height: 80%;
     width: 90%;
-    margin-left: 6.8px;
-    margin-top: 7px   
+    margin: auto;   
 }
 .im0>img+p{
-    margin-top: -3px;
-    margin-left: 35px;
+    padding: 0px;
+    margin: auto;
+    text-align: center;
     font-size: 18px;
     color: orange;
 }
@@ -152,14 +146,14 @@ justify-content: center;
     border-radius: 4px;
     height: 80%;
     width: 90%;
-    margin-left: 6.8px;
-    margin-top: 7px   
+    margin: auto; 
 }
 .im01>img+p{
-    margin-top: -3px;
-    margin-left: 35px;
     font-size: 18px;
     color: orange;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
 }
 .im3{
     display: flex;
@@ -172,34 +166,33 @@ justify-content: center;
     border-radius: 4px;
     height: 75%;
     width: 90%;
-    margin-left: 6.8px;
-    margin-top: 7px   
+    margin: auto;
 }
 .im02>img{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 4px;
     height: 80%;
     width: 90%;
-    margin-left: 6.8px;
-    margin-top: 7px   
+    margin: auto;   
 }
 .im02>img+p{
-    margin-top: -3px;
-    margin-left: 35px;
+    margin: auto;
     font-size: 18px;
     color: orange;
+    padding: 0px;
+    text-align: center;
 }
 .im03>img{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 4px;
     height: 80%;
     width: 90%;
-    margin-left: 6.8px;
-    margin-top: 7px   
+    margin: auto;
 }
 .im03>img+p{
-    margin-top: -3px;
-    margin-left: 35px;
+    margin: auto;
     font-size: 18px;
     color: orange;
+    padding: 0px;
+    text-align: center;
 }
