@@ -7,9 +7,7 @@ This is a e-commerce website clone that we made during the construct week at Mas
 
 ## Deployment
 
-This project is deployed on netlify here -
-
-[Banggood Clone](https://banggood-clone-masai.netlify.app/)
+This project is deployed on netlify here - [Banggood Clone](https://banggood-clone-masai.netlify.app/)
 
 ## Authors
 
