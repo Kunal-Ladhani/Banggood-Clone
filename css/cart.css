@@ -123,3 +123,20 @@ height: 300px;
 html{
   height: 100%;
 }
+
+#promo{
+  display: flex;
+  margin-left: 400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#promo > input {
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+}
+#applyPromo {
+  margin-left: 20px;
+}

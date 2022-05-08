@@ -1,5 +1,6 @@
 var totalItems = 0;
 var totalPrice = 0;
+var isPromoCodeApplied = false;
 
 var data = JSON.parse(localStorage.getItem("cartDetails"));
 
@@ -52,11 +53,34 @@ data.forEach((element,i) => {
 
 
 document.querySelector(".totalItem").innerText = totalItems;
-document.querySelector(".totalPrice").innerText = "$"+totalPrice;
+showTotalCartValue(totalPrice)
 
 document.querySelector("#checkout").addEventListener("click",goToPayment);
 
 function goToPayment() {
     alert("Confirm Payment ?");
     window.location.href="../html/payment.html";
+}
+
+document.querySelector("#applyPromo").addEventListener("click",addPromoCode);
+
+function addPromoCode() {
+    var promocode = document.querySelector("#promoCode").value;
+    console.log(promocode);
+
+    if(promocode == "masai30" && isPromoCodeApplied == false)
+    {
+        isPromoCodeApplied = true;
+        totalPrice = 0.7 * Number(totalPrice);
+        showTotalCartValue(totalPrice);
+    } else if(promocode == "masai30" && isPromoCodeApplied == true)
+    {
+        alert("Promocode already applied");
+    } else {
+        alert("Promocode is Wrong");
+    }
+}
+
+function showTotalCartValue(totalPrice) {
+    document.querySelector(".totalPrice").innerText = "$"+totalPrice;
 }
