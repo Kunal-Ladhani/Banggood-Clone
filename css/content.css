@@ -146,7 +146,7 @@ h3+p+p{
     display: grid;
     grid-template-columns: repeat(6,250px);
     grid-template-rows: repeat(1,260px);
-    row-gap: 10px;
+    row-gap: 20px;
     column-gap: -10px; 
     text-align: start;
     font-size: 12px; 

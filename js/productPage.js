@@ -184,22 +184,25 @@ var productsData =[
 
 var electronics = JSON.parse(localStorage.getItem("productItem")) || 
 {
-    img_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/AE/9E/e8a54874-247b-4e52-8e21-431d6e80b37e.jpg.webp",
-    name : "ZK-MT21 bluetooth 5.0 Subwoofer Amplifier Board 50WX2+100W 2.1 Channel Power Audio Stereo Amplifier Tone Board Bass AMP AUX",
-    price : 1324.10 ,
-    strickedoffprice : 2493.11,
-    id :1905145, 
-//    id : 1917163,
-    category : "electronics"
-    }
+     image_url : "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/AE/9E/e8a54874-247b-4e52-8e21-431d6e80b37e.jpg.webp",
+     name : "ZK-MT21 bluetooth 5.0 Subwoofer Amplifier Board 50WX2+100W 2.1 Channel Power Audio Stereo Amplifier Tone Board Bass AMP AUX",
+     price : 1324.10 ,
+     strikedoffprice : 2493.11,
+     id :1905145, 
+     category : "electronics"
+}
+
+
 
 var name = document.querySelector("#name").innerHTML = electronics.name
-var mainImg = document.querySelector("#main_img").setAttribute("src",electronics.img_url)
-var price = document.querySelector("#price>h2").innerHTML ="₹ " + electronics.price
-var strPrice = document.querySelector("#price>h4").innerHTML ="₹ " + electronics.strickedoffprice
-var discount = document.querySelector("#price>h3").innerHTML = discountValue(electronics.price,electronics.strickedoffprice).toFixed(0) + "%";
+var mainImg = document.querySelector("#main_img").setAttribute("src",electronics.image_url)
+var price = document.querySelector("#price>h2").innerHTML ="$" + electronics.price
+
+var strPrice = document.querySelector("#price>h4").innerHTML ="$" + electronics.strikedoffprice
+var discount = document.querySelector("#price>h3").innerHTML = discountValue(electronics.price,electronics.strikedoffprice).toFixed(0) + "%";
+
 var productId = document.querySelector("#productId").innerHTML ="Id : " + electronics.id;
-var smlImg = document.querySelector("#smlPic").setAttribute("src",electronics.img_url)
+var smlImg = document.querySelector("#smlPic").setAttribute("src",electronics.image_url)
 
 
 
@@ -239,17 +242,17 @@ qty.innerText = curr_item
 function addToCart(){
      var cartArr = JSON.parse(localStorage.getItem("cartDetails")) || [];
      
-    cartDetails = {
+     cartDetails = {
         name : electronics.name,
-        img : electronics.img_url,
+        img : electronics.image_url,
         price : curr_item*electronics.price,
         id : electronics.id,
         category : electronics.category,
         qty : curr_item
-    }
-  cartArr.push(cartDetails)
-    localStorage.setItem("cartDetails",JSON.stringify(cartArr))
-console.log(cartArr)
+     }
+     cartArr.push(cartDetails)
+     localStorage.setItem("cartDetails",JSON.stringify(cartArr))
+     console.log(cartArr)
 }
 
 for(i=0;i<productsData.length;i++){
