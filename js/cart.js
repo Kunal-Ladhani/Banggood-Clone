@@ -53,3 +53,10 @@ data.forEach((element,i) => {
 
 document.querySelector(".totalItem").innerText = totalItems;
 document.querySelector(".totalPrice").innerText = "$"+totalPrice;
+
+document.querySelector("#checkout").addEventListener("click",goToPayment);
+
+function goToPayment() {
+    alert("Confirm Payment ?");
+    window.location.href="../html/payment.html";
+}

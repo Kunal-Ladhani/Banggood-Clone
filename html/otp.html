@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+<style>
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+    h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color : green
+    }
+    #form{
+        border : 1px solid green;
+        box-shadow: rgba(14, 255, 74, 0.16) 0px 1px 4px, rgb(44, 110, 0) 0px 0px 0px 2px;
+        height : auto;
+        width: 30%;
+        margin:auto;
+        margin-top: 100px;
+        padding: 30px;
+        border-radius: 20px;
+
+    }
+    #form>input{
+        height: 40px;
+        margin: auto;
+        width: 90%;
+        margin-bottom: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+    #form>input:last-child{
+        background-color: green;
+        
+        margin-top: 30px;
+        height: 50px;
+        width: 98%;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 40px;
+    }
+    #form>input:last-child:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        color:green;
+        background-color: white;
+    }
+</style>
+</head>
+
+<body>
+    
+    <form id="form">
+        <h1>Verify User</h1>
+        <input id="mobile" type="number" placeholder="Enter Your Mobile Number">
+        <input id="OTP" type="number" placeholder="Enter the OTP  (hint : 1234)">
+        
+        <input  id="" type = "submit">
+    </form>
+</body>
+
+<script>
+    
+    document.addEventListener("submit",compareData)
+    function compareData(){
+        event.preventDefault()
+    
+        if( form.OTP.value == 1234){
+         alert("payment successful")
+     }
+     else{
+         alert("Invalid OTP.")
+     }
+     window.location.reload()
+      }
+
+   
+</script>
+
+
+
+
+</html>
+
