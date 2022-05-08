@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,400&family=Poppins:ital,wght@0,500;0,600;0,700;1,300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="productPage.css">
+</head>
+<body>
+  <!-- navbar page -->
+
+    <!-- Navbar Contents -->
+    <header id="navbar">
+      <div id="navbarContent">
+        <div id="companyLogo">
+          <img src="./images/banggoodLogo.svg" alt="Banggood logo" id="logo" />
+          <a href="cart.html" id="cat">CATEGORIES</a>
+        </div>
+        <div id="searchBar">
+          <input type="text" placeholder="    Search" id="searchBox" />
+
+          <button id="searchButton">
+            <img src="./images/search.PNG" id="searchImg" />
+          </button>
+        </div>
+        <div id="buttons">
+          <button id="ship">
+            <img src="./images/ship to.PNG" id="shipTo" />
+          </button>
+          <button id="userLogin">
+            <img src="./images/person.png" id="person" />
+          </button>
+          <button id="cartBut"><a href="cart.html">
+            <img src="./images/cart.png" id="cart" />
+          </a>
+            
+          </button>
+        </div>
+      </div>
+    </header>
+
+  <!-- main Content -->
+  <div id="front">
+        <div id="img_sec">
+            <div>
+                <img id="main_img"  src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/3F/01/bd928956-8436-44b6-aff5-91616f9aca9c.jpg.webp">
+                
+            </div>
+        </div>
+     <div id="detail_sec">
+            <h3 id="name"></h3>
+            <span class="heading">Rating :</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked second"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span style="margin-right: 10px;">4.0</span>
+                <span>Brand :</span>
+                <span><u style="margin-right: 10px">Baseus</u></span>
+                <span>Questions &  Answers</span>
+                <span id="productId" class="grey">ID : 1949988 </span>
+           
+            <img id="preOrder" src="./images/preOrders.png">
+        <div id="price">
+            <h2>₹ 1324.10</h2>
+            <h4 class="grey cl">3584.19</h4>
+            <h3>-63%</h3>  </div>
+        <div>✆ Open Our App to get More Discount ▼</div>
+        <div id="new_alw">₹ 155.87 New User Allowance</div>
+            <span>Color : </span>
+            <span class="grey">Black</span>
+            <img id="smlPic" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/3F/01/bd928956-8436-44b6-aff5-91616f9aca9c.jpg.webp">
+            <span>Ship From :</span>
+            <span class="grey">CN</span>
+            <h3 class="org_border">CN</h3>
+            <div>
+                <p>QTY : </p>
+                <div class="flex"><div id="qty">
+                    <span id="minus">-</span>
+                    <span id="count">1</span>
+                    <span id="plus" >+</span>
+                </div>
+                <span class="bold">In stock. </span><span>in 24 hours</span> </div>                       
+            </div>
+            
+            <div id="cartBtn">
+                <button id="buyNow" onclick="buyNow()">Buy Now</button>
+                <button id="addToCart" onclick="addToCart()">Add to Cart</button>
+                <span>♡ 2034</span>
+            </div>
+            <p class="bold">Secure Payment</p>
+            <p>Multiple payment Options</p>
+            <p class="bold">Customer Service Guarantee</p>
+    </div>
+      
+        <div id="reco_sec">
+            <p>Reccomendation</p>
+            <img  id="recoImg" src="https://imgaz2.staticbg.com/thumb/grid/oaupload/banggood/images/BD/CF/c1587418-354b-449f-978d-3bfb4d776cb9.jpg.webp">
+            <p class="bold">₹ 2493.11</p>
+            <img  id="recoImg" src="https://imgaz2.staticbg.com/thumb/grid/oaupload/banggood/images/A8/58/78f432b6-8990-47cb-8cfc-75f99b683b85.jpg.webp">
+            <p class="bold">₹ 1324.10</p>
+            <img  id="recoImg" src="https://imgaz3.staticbg.com/thumb/grid/oaupload/banggood/images/9D/A9/7b84de76-8edc-4810-8e49-05b87cb13679.png.webp">
+            <p class="bold">₹ 1713.77</p>
+            <p class="grey">Share to</p>
+            <div id="smlImg">
+                <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxHMW-7BbL7XMYi37Q1B3UdzD84FjaBQH-Q&usqp=CAU"></span>
+                <span><img src="data:image/jpeg;base64,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"></span>
+                <span><img src="data:image/png;base64,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"></span>
+                <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6sM24Ml7xWiiiFHC62QqRoZ5Nun-2Opkqlw&usqp=CAU"></span>
+                <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9aGe_pKBjaVu1uhwwAZ6N-pa4ZfqLKhxPyQ&usqp=CAU"></span>
+            </div>
+            
+        </div>
+    </div>
+    <h2>You May Also Like</h2>
+   <div id="sugItems">
+    <div><img src="https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/53/B8/c08af8c8-07d6-47da-95e0-a4fa42720e87.jpg.webp">
+        <h3>₹ 3895.93</h3>
+        <p>Goodgo 10LED... </p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked second"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span style="margin-right: 10px;">4.0</span>
+        </div>
+
+    <div><img src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B4/7C/8b5d1473-7564-43ff-a629-565fa3df6366.jpg.webp">
+        <h3>₹ 10130.66</h3>
+        <p>LOKMAT APPLLP 60...</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked second"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span style="margin-right: 10px;">4.0</span>
+        </div>
+
+    <div><img src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/5E/65/eaefeee8-7384-4689-9e48-f8007ffa5daf.jpg.webp">
+        <h3>₹ 3166.59</h3>
+        <p>H96 Max V11... </p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked second"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span style="margin-right: 10px;">3.0</span>
+        </div>
+
+    <div><img src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/CD/EB/907d41c2-6195-4d37-b5fc-a1c2a7654415.jpg.webp">
+        <h3>₹ 1479.97</h3>
+        <p>ZK-MT21 bluetooth 5.0 ... </p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked second"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span style="margin-right: 10px;">5.0</span>
+        </div>
+
+    <div><img src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B5/BB/26e3f029-f7d7-4ae3-bf0b-d6f4563ae3b1.jpg.webp">
+        <h3>₹ 1557.90</h3>
+        <p> Speaker Alarm Clock...</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked second"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span style="margin-right: 10px;">4.0</span>
+        </div>
+
+    <div><img src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/45/19/5a79557b-11cb-4bfd-b26f-9c895f9cc5ad.jpg.webp">
+        <h3>₹ 2493.11</h3>
+        <p>BlitzWolf® BW-BTS6... </p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked second"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span style="margin-right: 10px;">4.0</span>
+        </div>
+
+    <div><img src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/C5/38/f55d038e-e4de-42fe-8d02-29f27206324a.jpg.webp">
+            <h3>₹ 646.07</h3>
+            <p>Geekcreit® 40pcs FR... </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked second"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span style="margin-right: 10px;">4.0</span>
+            </div>
+
+    <div><img src="https://imgaz.staticbg.com/thumb/grid/oaupload/banggood/images/C1/3F/f77dad71-3c4a-4e58-8334-d3360261a80e.jpg.webp">
+        <h3>₹ 1324.10</h3>
+            <p>Lenovo LP2 TWS bluetooth... </p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked second"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span style="margin-right: 10px;">4.0</span>
+            </div>
+
+   </div>
+
+   <div id="middle">
+       <div id="topSelling">
+           <h3>♛ Top Selling</h3>
+           <img  id="recoImg" src="https://imgaz2.staticbg.com/thumb/grid/oaupload/banggood/images/BD/CF/c1587418-354b-449f-978d-3bfb4d776cb9.jpg.webp">
+           <p class="bold">₹ 2493.11</p>
+           <img  id="recoImg" src="https://imgaz2.staticbg.com/thumb/grid/oaupload/banggood/images/A8/58/78f432b6-8990-47cb-8cfc-75f99b683b85.jpg.webp">
+           <p class="bold">₹ 1324.10</p>
+           <img  id="recoImg" src="https://imgaz3.staticbg.com/thumb/grid/oaupload/banggood/images/9D/A9/7b84de76-8edc-4810-8e49-05b87cb13679.png.webp">
+           <p class="bold">₹ 1713.77</p>
+           <img  id="recoImg" src="https://imgaz2.staticbg.com/thumb/grid/oaupload/banggood/images/A8/58/78f432b6-8990-47cb-8cfc-75f99b683b85.jpg.webp">
+           <p class="bold">₹ 1324.10</p>
+           <img  id="recoImg" src="https://imgaz3.staticbg.com/thumb/grid/oaupload/banggood/images/9D/A9/7b84de76-8edc-4810-8e49-05b87cb13679.png.webp">
+           <p class="bold">₹ 1713.77</p>
+           
+       </div>
+       <div id="specs">
+           <div id="miniNav">
+               <h3>overview</h3>
+               <h3>Specification</h3>
+               <h3>Reviews(342)</h3>
+               <h3>Q&As</h3>
+               <h3>Shipment</h3>
+           </div>
+        <div id="video"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/JlrSlzJCWus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+       <h3>Features:</h3>
+                <p>-New bluetooth 5.2 technology has significantly improved anti-interference, fast and stable connection.</p>
+                <p>-Built-in 6mm high-fidelity speaker unit, HD sound quality.</p>
+                <p>-The headset has a full battery life of up to 5h, and it can be used with the charging box up to 18h, with a Type-C charging interface.</p>
+                <p>-The use of call noise reduction technology can effectively filter environmental noise, extract clear voices, and effectively reduce external interference during calls.</p>
+                <p>-Lighter and smaller than the Redmi Buds 3, with soft silica gel, stable and comfortable.</p>
+        <h3>Specifications :</h3>
+                <p>Brand: Xiaomi</p>
+                <p> Model: M2110E1/ Redmi Buds 3 (Youth Edition)</p>
+                <p> Version:</p>
+                <p> CN Warehouse: Chinese Version (Chinese User Manual)</p>
+                <p> HK Warehouse: Global Version (Global User Manual)</p>
+        <h3>Operate:</h3>
+            <p>Long press on both sides: Enter the game low-latency mode</p>
+            <p>Double tap: Answer call/ next track</p>
+            <p>Three taps: Reject / hang up / wake up Xiao Ai</p>
+            <p>Long press on one side: Play/pause music</p>
+            <p style="margin-top: 50px;">Wireless connection: bluetooth 5.2</p>
+            <p>Communication distance: 10m (barrier-free open environment)</p>
+            <p>Net weight of single earphone: about 4.2g</p>
+            <p>Total weight with charging case: about 36g</p>
+            <p>Headphone battery life: about 5h</p>
+            <p>Battery life with charging case: about 18h</p>
+            <p>Headphone size: 24.5 x 16.7 x 24.6mm</p>
+            <p>Charging box size: 60 x 46 x 23.7mm</p>
+            <p>Charging port: Type-C</p>
+        <h3>Package List</h3>
+            <p>1 x Charging Box</p>
+            <p>2 x Earphones</p>
+            <p>3 pair Earplugs (S / M /L)</p>
+            <p>2 pair Top of the ear (S /L)</p>
+            <p>1 x Manual</p>
+
+            </div>
+            
+   </div>
+   <div id="bigPics">
+    <!-- <img id="img1" src="https://imgaz.staticbg.com/images/oaupload/banggood/images/7A/7E/17ca19f1-1ba1-4c2c-bbfb-cda8c0dc38ab.jpg.webp" alt="">
+    <img id="img2" src="https://imgaz.staticbg.com/images/oaupload/banggood/images/E1/FA/00d987af-1136-4ceb-b8b4-0e5e9a5bfedb.jpg.webp" alt="">
+    <img id="img3" src="https://imgaz.staticbg.com/images/oaupload/banggood/images/0D/8E/9d79af92-e44c-4820-bc24-bb39edf15341.jpg.webp" alt="">
+    <img id="img4" src="https://imgaz.staticbg.com/images/oaupload/banggood/images/CE/04/04b70460-63e6-43ce-961f-1ba4e3d6a5c3.jpg.webp">
+    <img src="https://imgaz.staticbg.com/images/oaupload/banggood/images/A0/11/b21fe40f-9ff3-470e-940f-5074d7a4b49c.jpg.webp" alt="">
+   <img src="https://imgaz.staticbg.com/images/oaupload/banggood/images/9F/51/86d9add0-de00-49bf-9444-4cea03520aab.jpg.webp">
+   <img src="https://imgaz.staticbg.com/images/oaupload/banggood/images/CE/58/f8732a38-bec3-436b-9695-3e5999dff3f2.jpg.webp" alt="">
+  <img src="https://imgaz.staticbg.com/images/oaupload/banggood/images/3E/1C/4d088e7d-f79f-44b0-a391-0c4da76bf7fd.jpg.webp" alt="">
+    <img src="https://imgaz.staticbg.com/images/oaupload/banggood/images/35/46/44ee461c-1f15-47fb-afb0-0d9d3d98680e.jpg.webp" alt=""> -->
+ </div>
+
+
+ <h2 style="width: auto; margin-left: 10%;">Customers Who View This Also View</h2>
+ <div id="sugItems">
+  <div><img src="https://imgaz3.staticbg.com/thumb/gallery/oaupload/banggood/images/53/B8/c08af8c8-07d6-47da-95e0-a4fa42720e87.jpg.webp">
+      <h3>₹ 3895.93</h3>
+      <p>Goodgo 10LED... </p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked second"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span style="margin-right: 10px;">4.0</span>
+      </div>
+
+  <div><img src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B4/7C/8b5d1473-7564-43ff-a629-565fa3df6366.jpg.webp">
+      <h3>₹ 10130.66</h3>
+      <p>LOKMAT APPLLP 60...</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked second"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span style="margin-right: 10px;">4.0</span>
+      </div>
+
+  <div><img src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/5E/65/eaefeee8-7384-4689-9e48-f8007ffa5daf.jpg.webp">
+      <h3>₹ 3166.59</h3>
+      <p>H96 Max V11... </p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked second"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span style="margin-right: 10px;">3.0</span>
+      </div>
+
+  <div><img src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/CD/EB/907d41c2-6195-4d37-b5fc-a1c2a7654415.jpg.webp">
+      <h3>₹ 1479.97</h3>
+      <p>ZK-MT21 bluetooth 5.0 ... </p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked second"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span style="margin-right: 10px;">5.0</span>
+      </div>
+
+  <div><img src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B5/BB/26e3f029-f7d7-4ae3-bf0b-d6f4563ae3b1.jpg.webp">
+      <h3>₹ 1557.90</h3>
+      <p> Speaker Alarm Clock...</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked second"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span style="margin-right: 10px;">4.0</span>
+      </div>
+
+  <div><img src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/45/19/5a79557b-11cb-4bfd-b26f-9c895f9cc5ad.jpg.webp">
+      <h3>₹ 2493.11</h3>
+      <p>BlitzWolf® BW-BTS6... </p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked second"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span style="margin-right: 10px;">4.0</span>
+      </div>
+
+  <div><img src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/C5/38/f55d038e-e4de-42fe-8d02-29f27206324a.jpg.webp">
+          <h3>₹ 646.07</h3>
+          <p>Geekcreit® 40pcs FR... </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked second"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span style="margin-right: 10px;">4.0</span>
+          </div>
+
+  <div><img src="https://imgaz.staticbg.com/thumb/grid/oaupload/banggood/images/C1/3F/f77dad71-3c4a-4e58-8334-d3360261a80e.jpg.webp">
+      <h3>₹ 1324.10</h3>
+          <p>Lenovo LP2 TWS bluetooth... </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked second"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span style="margin-right: 10px;">4.0</span>
+          </div>
+
+ </div>
+
+ </div>
+ <div id="review">
+     <div id="mainReview">
+        <h2>Customer Reviews</h2>
+        <h1 style="display: inline; margin-right:10px">4.1</h1><span>out of 5</span>
+            <div style="font-size:50px;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked second"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+    <div id="rateBlock">
+        <div class="row">
+            <div class="side">
+              <div>5 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-5"></div>
+              </div>
+            </div>
+            <div class="side right">
+              <div>150</div>
+            </div>
+            <div class="side">
+              <div>4 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-4"></div>
+              </div>
+            </div>
+            <div class="side right">
+              <div>63</div>
+            </div>
+            <div class="side">
+              <div>3 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-3"></div>
+              </div>
+            </div>
+            <div class="side right">
+              <div>15</div>
+            </div>
+            <div class="side">
+              <div>2 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-2"></div>
+              </div>
+            </div>
+            <div class="side right">
+              <div>6</div>
+            </div>
+            <div class="side">
+              <div>1 star</div>
+            </div>
+            <div class="middle">
+              <div class="bar-container">
+                <div class="bar-1"></div>
+              </div>
+            </div>
+            <div class="side right">
+                <div>20</div>
+              </div>
+        </div>
+    </div>
+            
+    </div>
+ </div>
+
+ 
+ <div>
+  <img id="footerImg" src="../images/bottomInfo.png" />
+</div>
+
+</body>
+<script src="productPage.js"></script>
+
+</html>
