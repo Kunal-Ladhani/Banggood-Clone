@@ -35,7 +35,7 @@ This page as the name suggests has the login and signup functionality, the login
 
 1. This page as the name suggests has the homepage functionality. This is the ladning page, Men's Clothing, Women's Clothing, and Electronics page can be accessed from here to add to cart.
 
-2. Cart page is also accessible from here, to view your cart. To add the item to cart you will have to go to specific category page.
+2. Cart page is also accessible from here, to view your cart. To add the item to cart you will have to go to specific category page or you can add from homepage also.
 
 ## Men's Clothing, Women's Clothing, Electronics - 
 
