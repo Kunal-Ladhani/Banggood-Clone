@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <title>Document</title>
-
-<style>
-    *{
-        font-family: 'Poppins', sans-serif;
-    }
-    h1{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 40px;
-    color : green
-    }
-    #form{
-        border : 1px solid green;
-        box-shadow: rgba(14, 255, 74, 0.16) 0px 1px 4px, rgb(44, 110, 0) 0px 0px 0px 2px;
-        height : auto;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,300&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Payment</title>
+    <link
+      rel="icon"
+      href="https://www.banggood.in/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      html {
+        height: 100%;
+        font-family: "Quicksand", sans-serif;
+        text-align: center;
+        line-height: 1.5em;
+        /*   background:#E0E4CC; */
+        background: #69d2e7;
+        background: -moz-linear-gradient(
+          -45deg,
+          #69d2e7 0%,
+          #a7dbd8 25%,
+          #e0e4cc 46%,
+          #e0e4cc 54%,
+          #f38630 75%,
+          #fa6900 100%
+        );
+        background: -webkit-linear-gradient(
+          -45deg,
+          #69d2e7 0%,
+          #a7dbd8 25%,
+          #e0e4cc 46%,
+          #e0e4cc 54%,
+          #f38630 75%,
+          #fa6900 100%
+        );
+        background: linear-gradient(
+          135deg,
+          #69d2e7 0%,
+          #a7dbd8 25%,
+          #e0e4cc 46%,
+          #e0e4cc 54%,
+          #f38630 75%,
+          #fa6900 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2e7', endColorstr='#fa6900',GradientType=1 );
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+        color: green;
+      }
+      #form {
+        border: 1px solid green;
+        box-shadow: rgba(14, 255, 74, 0.16) 0px 1px 4px,
+          rgb(44, 110, 0) 0px 0px 0px 2px;
+        height: auto;
         width: 30%;
-        margin:auto;
+        margin: auto;
         margin-top: 100px;
         padding: 30px;
         border-radius: 20px;
-
-    }
-    #form>input{
+      }
+      #form > input {
         height: 40px;
         margin: auto;
         width: 90%;
@@ -38,64 +81,63 @@
         font-size: 20px;
         border-radius: 10px;
         padding-left: 15px;
-    }
-    #form>input:last-child{
+      }
+      #form > input:last-child {
         background-color: green;
-        
+
         margin-top: 30px;
         height: 50px;
         width: 98%;
         color: white;
         cursor: pointer;
         margin-bottom: 40px;
-    }
-    #form>input:last-child:hover{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        color:green;
-        background-color: white;
-    }
-</style>
-</head>
-
-<body>
-    
-    <form id="form">
-        <h1>Payment page</h1>
-        <input id="cardNumber" type="number" placeholder="Card Number , hint : 123456789">
-        <input id="cvv" type="cvv" placeholder="CVV hint : 758">
-        <input id="expiry" type = "text" placeholder="Expiry Month hint : 01/26">
-        <input id="name" type="text" placeholder="Enter Your Name">
-        <input  id="" type = "submit">
-    </form>
-</body>
-
-<script>
-    rData = {
-        cardNumber : 123456789,
-        cvv : 758,
-        expiry : "01/26"
-    }
-    document.addEventListener("submit",compareData)
-    function compareData(){
-        event.preventDefault()
-      var data = {
-          cardNumber : form.cardNumber.value,
-          cvv : form.cvv.value,
-          expiry : form.expiry.value
       }
-     if(rData.cardNumber == data.cardNumber ||rData.cvv == data.cvv || rData.expiry == data.expiry ){
-         
-         window.location.href = "otp.html"
-     }
-     else{
-         alert("Please Enter Valid card details")
-     }
-     }
-   
-</script>
+      #form > input:last-child:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        color: green;
+        background-color: white;
+      }
+    </style>
+  </head>
 
+  <body>
+    <form id="form">
+      <h1>Payment page</h1>
+      <input
+        id="cardNumber"
+        type="number"
+        placeholder="Card Number , hint : 123456789"
+      />
+      <input id="cvv" type="cvv" placeholder="CVV hint : 758" />
+      <input id="expiry" type="text" placeholder="Expiry Month hint : 01/26" />
+      <input id="name" type="text" placeholder="Enter Your Name" />
+      <input id="" type="submit" />
+    </form>
+  </body>
 
-
-
+  <script>
+    rData = {
+      cardNumber: 123456789,
+      cvv: 758,
+      expiry: "01/26",
+    };
+    document.addEventListener("submit", compareData);
+    function compareData() {
+      event.preventDefault();
+      var data = {
+        cardNumber: form.cardNumber.value,
+        cvv: form.cvv.value,
+        expiry: form.expiry.value,
+      };
+      if (
+        rData.cardNumber == data.cardNumber ||
+        rData.cvv == data.cvv ||
+        rData.expiry == data.expiry
+      ) {
+        window.location.href = "otp.html";
+      } else {
+        alert("Please Enter Valid card details");
+      }
+    }
+  </script>
 </html>
-

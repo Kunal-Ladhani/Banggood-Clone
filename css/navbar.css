@@ -82,6 +82,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+	cursor :pointer;
 }
 #ship
 {
@@ -95,16 +96,16 @@ body{
 }
 #shipTo{
     height: 40px;
-    width: 150px;
+    width: auto;
 }
 #person{
     height: 40px;
-    width: 100px;
+    width: auto;
 
 }
 #cart{
     height: 30px;
-    width: 30px;
+    width: auto;
 }
 #categories{
     width: 250px;

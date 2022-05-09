@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in</title>
+    <title>Register</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -20,14 +20,14 @@
     <div id="bar">
       <img
         src="https://css.banggood.in/web/src/img/login/logo.png?v=4bb0729"
-        alt="Banggood Logo"
+        alt=""
       />
     </div>
     <div id="back">
       <div id="box">
         <div id="lol">
-          <div><a id="onit" href="./signin.html">SIGN IN</a></div>
-          <div><a href="./signup.html">REGISTER</a></div>
+          <div><a href="./signin.html">SIGN IN</a></div>
+          <div><a id="onit" href="./signup.html">REGISTER</a></div>
         </div>
         <div>
           <p id="orange">
@@ -39,7 +39,30 @@
         <form>
           <input id="email" type="text" placeholder="Email" />
           <input id="password" type="password" placeholder="Password" />
-          <input id="new" type="submit" value="Log In" />
+
+          <div id="check">
+            <div>
+              <input type="checkbox" id="terms" name="terms" checked />
+              <label for="terms">
+                I agree to Banggood.com
+                <a class="anc" href="./html/terms-conditon&privacy.html">
+                  Terms of Use
+                </a>
+              </label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="privacy" name="privacy" />
+              <label for="privacy">
+                I agree to Banggood.com
+                <a class="anc" href="./terms-conditon&privacy.html">
+                  Privacy Policy
+                </a>
+              </label>
+            </div>
+          </div>
+
+          <input id="new" type="submit" value="Create Your Account" />
         </form>
 
         <p id="bot">Quick Access With</p>
@@ -90,10 +113,9 @@
     <p id="done">Copyright © 2006-2022 Banggood All Rights Reserved.</p>
   </body>
 </html>
+
 <script>
   var form = document.querySelector("form");
-  var signupData = JSON.parse(localStorage.getItem("signupData"));
-  //   console.log(loginData)
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -103,17 +125,8 @@
       password: form.password.value,
     };
 
-    if (signupData === null) {
-      alert("Please create an account First");
-    } else if (
-      signupData.email == data.email &&
-      signupData.password == data.password
-    ) {
-      localStorage.setItem("signin", JSON.stringify(signupData));
-      alert("login Successful");
-      window.location.href = "../index.html";
-    } else {
-      alert("User data does not exist please check before you Enter ");
-    }
+    localStorage.setItem("signupData", JSON.stringify(data));
+    alert("Sign up successful");
+    window.location.href = "./signin.html";
   });
 </script>

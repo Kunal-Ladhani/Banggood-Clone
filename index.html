@@ -4,124 +4,359 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>
+      Banggood India : Global leading Online Shop for Gadgets and Fashion
+    </title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/center.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="icon"
+      href="https://www.banggood.in/favicon.ico"
+      type="image/x-icon"
     />
-    <link rel="stylesheet" href="./css/common.css" />
   </head>
+
   <body>
-    <div id="bar">
-      <img
-        src="https://css.banggood.in/web/src/img/login/logo.png?v=4bb0729"
-        alt=""
-      />
-    </div>
-    <div id="back">
-      <div id="box">
-        <div id="lol">
-          <div><a href="./html/signin.html">SIGN IN</a></div>
-          <div><a id="onit" href="index.html">REGISTER</a></div>
+    <!-- Navbar Contents -->
+    <header id="navbar">
+      <div id="navbarContent">
+        <!-- Company Logo -->
+        <div id="companyLogo">
+          <img src="./images/banggoodLogo.svg" alt="Banggood logo" id="logo" />
+          <a href="" id="cat">CATEGORIES</a>
         </div>
-        <div>
-          <p id="orange">
-            <i class="fa fa-gift red-color"></i> Get Free Gift and $2 allowance
-            for New User
-          </p>
+        <!-- Search Bar -->
+        <div id="searchBar">
+          <input type="text" placeholder="Search" id="searchBox" />
+          <!-- Search Button -->
+          <button id="searchButton">
+            <img src="./images/search.PNG" id="searchImg" />
+          </button>
         </div>
-
-        <form>
-          <input id="email" type="text" placeholder="Email" />
-          <input id="password" type="password" placeholder="Password" />
-
-          <div id="check">
-            <div>
-              <input type="checkbox" id="terms" name="terms" checked />
-              <label for="terms">
-                I agree to Banggood.com
-                <a class="anc" href="./html/terms-conditon&privacy.html">
-                  Terms of Use
-                </a>
-              </label>
-            </div>
-
-            <div>
-              <input type="checkbox" id="privacy" name="privacy" />
-              <label for="privacy">
-                I agree to Banggood.com
-                <a class="anc" href="./html/terms-conditon&privacy.html">
-                  Privacy Policy
-                </a>
-              </label>
-            </div>
-          </div>
-
-          <input id="new" type="submit" value="Create Your Account" />
-        </form>
-
-        <p id="bot">Quick Access With</p>
-        <div id="images">
-          <div>
-            <a href="https://appleid.apple.com/"
-              ><img
-                class="rip"
-                src="https://cdn.icon-icons.com/icons2/1/PNG/256/social_apple_mac_25.png"
-                alt="MAC"
-            /></a>
-          </div>
-          <div>
-            <a href="https://www.facebook.com/login"
-              ><img
-                class="rip"
-                src="https://cdn.icon-icons.com/icons2/2108/PNG/512/facebook_icon_130940.png"
-                alt="Facebook"
-            /></a>
-          </div>
-          <div>
-            <a
-              href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-              ><img
-                class="rip"
-                src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
-                alt="Google"
-            /></a>
-          </div>
-          <div>
-            <a href="https://twitter.com/i/flow/login"
-              ><img
-                class="rip"
-                src="https://cdn-icons-png.flaticon.com/512/124/124021.png"
-                alt="Twitter"
-            /></a>
-          </div>
+        <div id="buttons">
+          <button id="ship">
+            <img src="./images/ship to.PNG" id="shipTo" />
+          </button>
+          <a href="index.html">
+            <button id="userLogin">
+              <a href="./html/signup.html">
+                <img src="./images/person.png" id="person" />
+              </a>
+            </button>
+          </a>
+          <button id="cartBut">
+            <a href="./html/cart.html">
+              <img src="./images/cart.png" id="cart" />
+            </a>
+          </button>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div id="last">
-      <p>About Banggood.com |</p>
-      <p>Terms And Conditions |</p>
-      <p>Privacy Policy |</p>
-      <p>Help Center</p>
-    </div>
-    <p id="done">Copyright © 2006-2022 Banggood All Rights Reserved.</p>
+    <main>
+      <div id="top">
+        <!-- Categories menu -->
+        <div id="categories">
+          <ul style="line-height: 25px">
+            <!-- Top Four Product Pages -->
+            <li><a href="./html/mens.html">Men's Clothing</a></li>
+            <li><a href="./html/womens.html">Women's Clothing</a></li>
+            <li><a href="./html/electronics.html">Electronics</a></li>
+            <!-- Non accessible pages -->
+            <li>Home Appliances</li>
+            <li>Phones & Accessories</li>
+            <li>Tools, Industrial & Scientific</li>
+            <li>Toys Hobbies and Robot</li>
+            <li>Computers & Office</li>
+            <li>Automobiles & Motorcycles</li>
+            <li>Sports & Outdoor</li>
+            <li>Home, Garden & Furniture</li>
+            <li>Jewelry & Watches</li>
+            <li>Shoes & Bags</li>
+            <li>Health,Beauty & Hair</li>
+            <li>Lights & Lighting</li>
+          </ul>
+        </div>
+
+        <div id="center">
+          <!-- image slider start -->
+          <div class="slider">
+            <div class="slides">
+              <!-- radio button start -->
+
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+
+              <!-- radio button end -->
+              <!-- slide image start -->
+              <div class="slide first">
+                <!-- <a href="https://imgaz.staticbg.com/banggood/os/202204/20220430010554_721.jpg.webp"> -->
+                <img
+                  src="https://imgaz.staticbg.com/banggood/os/202204/20220430010554_721.jpg.webp"
+                  alt="img1"
+                />
+              </div>
+              <div class="slide">
+                <!-- <a href="https://imgaz.staticbg.com/banggood/os/202204/20220429215316_864.jpg.webp"> -->
+                <img
+                  src="https://imgaz.staticbg.com/banggood/os/202204/20220429215316_864.jpg.webp"
+                  alt="img2"
+                />
+              </div>
+              <div class="slide">
+                <!-- <a href="https://imgaz.staticbg.com/banggood/os/202204/20220430010141_211.jpg.webp"> -->
+                <img
+                  src="https://imgaz.staticbg.com/banggood/os/202204/20220430010141_211.jpg.webp"
+                  alt="img3"
+                />
+              </div>
+              <div class="slide">
+                <!-- <a href="https://imgaz.staticbg.com/banggood/os/202204/20220427013917_455.jpg.webp"> -->
+                <img
+                  src="https://imgaz.staticbg.com/banggood/os/202204/20220427013917_455.jpg.webp"
+                  alt="img4"
+                />
+              </div>
+              <!-- slide images end -->
+              <!-- automatic navigation start -->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!-- automatic navigation end -->
+            </div>
+            <!-- manual navigation start -->
+            <!-- <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div> -->
+            <!-- manual navigation end -->
+          </div>
+          <!-- image slider end -->
+          <div class="im">
+            <div class="im1">
+              <p style="font-size: 20px; font-weight: bold">
+                New User Benefits
+              </p>
+              <p style="font-size: 15px">First Order-Choose One Gift</p>
+              <p style="font-size: 17px">Free Gifts & US$2 Allowance</p>
+            </div>
+            <div class="im2">
+              <div>
+                <div class="im0">
+                  <img
+                    src="https://imgaz.staticbg.com/thumb/view/oaupload/banggood/images/40/C3/d8e81577-a54e-bebd-3971-e0b8c703f62f.jpg.webp"
+                    alt=""
+                  />
+                  <p>US$24.99</p>
+                </div>
+              </div>
+              <div>
+                <div class="im01">
+                  <img
+                    src="https://imgaz2.staticbg.com/thumb/view/oaupload/banggood/images/68/F6/77f1525a-7b5d-4b64-831b-3555f6c0b232.jpg.webp"
+                    alt=""
+                  />
+                  <p>US$69.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="im3">
+              <div>
+                <div class="im02">
+                  <img
+                    src="https://imgaz3.staticbg.com/thumb/view/oaupload/banggood/images/91/6C/e98f02e8-e66c-4dec-9dba-eb6a2653af46.jpg.webp"
+                    alt=""
+                  />
+                  <p>US$32.99</p>
+                </div>
+              </div>
+              <div>
+                <div class="im03">
+                  <img
+                    src="https://imgaz1.staticbg.com/thumb/view/oaupload/banggood/images/83/BF/2b23ce56-acd1-444a-b46a-f6c5261ffa6a.jpg.webp"
+                    alt=""
+                  />
+                  <p>US$289.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="infoGraphic" style="text-align: left">
+          <p style="line-height: 40px">Customer Service Policy</p>
+          <ul style="line-height: 27px">
+            <li>Payment Security</li>
+            <li>Delivery Guarantee</li>
+            <li>Quality Guarantee</li>
+            <li>No Reason Returns</li>
+          </ul>
+          <a
+            id="info-seeMore"
+            href="https://www.banggood.in/marketing-Banggood-Product-Guarantee-Policy/tid-36623.html"
+          >
+            <p>See more</p>
+          </a>
+        </div>
+      </div>
+      <!-- Flash Deals -->
+      <h2>Flash Deals</h2>
+      <div id="container"></div>
+
+      <!-- Cart Second  -->
+      <h2>New Arrivals</h2>
+      <div id="conatiner2"></div>
+
+      <h2>Recommendations For You</h2>
+      <div id="conatiner3"></div>
+
+      <button class="glow-on-hover" id="showMore" type="button">
+        SHOW MORE!
+      </button>
+
+      <div>
+        <img id="footerImg" src="./images/bottomInfo.png" />
+      </div>
+    </main>
+    <footer>
+      <div id="footer">
+        <div id="part1">
+          <section class="section1">
+            <h3>Get to Know Us</h3>
+            <p class="p1"></p>
+            <p>About banggood.in</p>
+            <p>Guarantees & Return Policy</p>
+            <p>Contact Us</p>
+            <p>Help Center</p>
+            <p>Site Map</p>
+            <p>Intellectual Property Claims</p>
+          </section>
+
+          <section class="section2">
+            <h3>Subscribe</h3>
+            <p class="p1">
+              By subscribing you agree to receive email from us. <br />
+              Please read our Privacy Policy
+            </p>
+          </section>
+          <form>
+            <input type="Email" id="email" placeholder="Email Adress" />
+            <input type="submit" id="submit" />
+          </form>
+        </div>
+        <div id="part2">
+          <section class="section3">
+            <h3>Payment & Shipping</h3>
+            <p class="p1"></p>
+            <p>Payment Methods</p>
+            <p>BGpay Instruction</p>
+            <p>Shipping Guide</p>
+            <p>Locations We Ship To</p>
+            <p>Estimated Delivery Time</p>
+          </section>
+
+          <section class="section4">
+            <h3>Partnership Programs</h3>
+            <p class="p1"></p>
+            <p>Drop shipping</p>
+            <p>Review Club</p>
+            <p>Affiliate Program</p>
+            <p>Wholesale Program</p>
+            <p>Fashion Blogger Program</p>
+          </section>
+        </div>
+
+        <div id="part3">
+          <h4 id="h4">Download App</h4>
+
+          <img
+            id="apple"
+            src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504884.png?token=exp=1651827090~hmac=1e351ff3893684a379cd0de4eb936059"
+            alt=""
+          />
+          <img
+            id="andorid"
+            src="https://cdn-icons-png.flaticon.com/512/61/61120.png   "
+            alt=""
+          />
+          <img
+            id="QR"
+            src="https://cdn-icons-png.flaticon.com/512/3036/3036996.png"
+            alt=""
+          />
+
+          <section>
+            git
+            <h4>Follow Us</h4>
+            <img
+              id="fb"
+              src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
+              alt=""
+            />
+            <img
+              id="whataspp"
+              src="https://cdn-icons.flaticon.com/png/128/3670/premium/3670051.png?token=exp=1651827823~hmac=22b323ce952a9830bfee824068d01424"
+              alt=""
+            />
+            <img
+              id="twit"
+              src="https://cdn-icons-png.flaticon.com/128/179/179342.png"
+              alt=""
+            />
+            <img
+              id="utube"
+              src="https://cdn-icons-png.flaticon.com/128/185/185983.png"
+              alt=""
+            />
+            <img
+              id="pin"
+              src="https://cdn-icons-png.flaticon.com/128/179/179335.png"
+              alt=""
+            />
+            <img
+              id="tiktok"
+              src="https://cdn-icons-png.flaticon.com/128/5969/5969008.png"
+              alt=""
+            />
+          </section>
+
+          <section>
+            <img
+              id="insta"
+              src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536505.png?token=exp=1651828537~hmac=14debd2e43f05c554bb0c6baa3720ac2"
+              alt=""
+            />
+            <img
+              id="insta"
+              src="https://cdn-icons.flaticon.com/png/128/4138/premium/4138124.png?token=exp=1651828537~hmac=20e098156909af1a63545c5472bf228c"
+              alt=""
+            />
+            <img
+              id="insta"
+              src="https://cdn-icons-png.flaticon.com/128/7420/7420755.png"
+              alt=""
+            />
+            <img
+              id="insta"
+              src="https://cdn-icons-png.flaticon.com/128/7443/7443662.png"
+              alt=""
+            />
+          </section>
+          <section>
+            <p id="p2">© 2006-2022 BANGGOOD</p>
+          </section>
+          <section><p id="p4">TERMS PRIVACY SPECIALIZED AFFAIRS</p></section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
-<script>
-  var form = document.querySelector("form");
-
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    var data = {
-      email: form.email.value,
-      password: form.password.value,
-    };
-
-    localStorage.setItem("signupData", JSON.stringify(data));
-    alert("Sign up successful");
-    window.location.href = "../html/signin.html";
-  });
-</script>
+<script src="./js/homepage.js"></script>

@@ -15,20 +15,29 @@ h2{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     margin-left: 10px;
-    margin-right: 20px;
+    margin-right: 0px;
     margin-top: 40px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    
-
-   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
 }
 #container>div{
     /* padding: 10px; */
     margin-left: 15px;
-
+    /* border:1px solid red; */
     border-radius: 20px;
     height: 270px;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+#container>div:hover, #conatiner2>div:hover, #conatiner3>div:hover{
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+        transform: scale(1.1);
+}
+#flashImg{
+    height:60%;
+    width: 100%;
 }
 p~p{
     background-color: #ff4733;
@@ -49,7 +58,9 @@ p{
 img+p{
     font-weight: bolder;
 }
-
+#c3name{
+    font-weight: 100;
+}
 
 
 /* Card 1 add details Flash */
