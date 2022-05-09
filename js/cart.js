@@ -2,7 +2,7 @@ var totalItems = 0;
 var totalPrice = 0;
 var isPromoCodeApplied = false;
 
-var data = JSON.parse(localStorage.getItem("cartDetails"));
+var data = JSON.parse(localStorage.getItem("cartDetails")) || [] ;
 
 var product = document.querySelector(".productcont");
 
@@ -84,3 +84,12 @@ function addPromoCode() {
 function showTotalCartValue(totalPrice) {
     document.querySelector(".totalPrice").innerText = "$"+totalPrice;
 }
+
+
+document.querySelector("#emptyCart").addEventListener("click",emptyCart);
+
+function emptyCart() {
+    localStorage.removeItem('cartDetails');
+    window.location.reload();
+}
+

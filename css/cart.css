@@ -78,7 +78,7 @@ table td, table th {
   justify-content:flex-end;
   padding:1em 0;
 }
-#emptycart {
+#emptyCart {
   margin-right:1em;
 }
 table td:nth-last-child(1) {
