@@ -1,7 +1,5 @@
 # Banggood.com Clone
 
-This is a e-commerce website clone that we made during the construct week at Masai School. It was completed within 6 days.
-
 Banggood.com (https://www.banggood.in) is a multi-brand e-commerce store based out of China specialising in the sale of clothing, electronics, appliances, home-decor, jewelry and many more items. This website has sales all over the world. This collaborative project was completed within 6 days as part of the construct week of unit-2 at masai school.
 
 ## Deployment
