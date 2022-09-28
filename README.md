@@ -1,7 +1,4 @@
-# Unit-2-Project
-
-
-## Banggood.com Clone
+# Banggood.com Clone
 
 This is a e-commerce website clone that we made during the construct week at Masai School. It was completed within 6 days.
 
